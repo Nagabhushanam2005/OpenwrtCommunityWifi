@@ -1,0 +1,705 @@
+Build successful
+STDERR
+Package list missing or not up-to-date, generating it.
+
+Building package index...
+Downloading https://downloads.openwrt.org/releases/23.05.5/targets/bcm27xx/bcm2711/packages/Packages.gz
+Updated list of available packages in /builder/build_dir/target-aarch64_cortex-a72_musl/root-bcm27xx/../../../../builder/dl/openwrt_core
+Downloading https://downloads.openwrt.org/releases/23.05.5/targets/bcm27xx/bcm2711/packages/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/base/Packages.gz
+Updated list of available packages in /builder/build_dir/target-aarch64_cortex-a72_musl/root-bcm27xx/../../../../builder/dl/openwrt_base
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/base/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/luci/Packages.gz
+Updated list of available packages in /builder/build_dir/target-aarch64_cortex-a72_musl/root-bcm27xx/../../../../builder/dl/openwrt_luci
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/luci/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/packages/Packages.gz
+Updated list of available packages in /builder/build_dir/target-aarch64_cortex-a72_musl/root-bcm27xx/../../../../builder/dl/openwrt_packages
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/packages/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/routing/Packages.gz
+Updated list of available packages in /builder/build_dir/target-aarch64_cortex-a72_musl/root-bcm27xx/../../../../builder/dl/openwrt_routing
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/routing/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/telephony/Packages.gz
+Updated list of available packages in /builder/build_dir/target-aarch64_cortex-a72_musl/root-bcm27xx/../../../../builder/dl/openwrt_telephony
+Downloading https://downloads.openwrt.org/releases/23.05.5/packages/aarch64_cortex-a72/telephony/Packages.sig
+Signature check passed.
+Downloading file:packages/Packages
+Updated list of available packages in /builder/build_dir/target-aarch64_cortex-a72_musl/root-bcm27xx/../../../../builder/dl/imagebuilder
+Downloading file:packages/Packages.sig
+Signature check passed.
+Pseudo file "dev" exists in source filesystem "/builder/build_dir/target-aarch64_cortex-a72_musl/root-bcm27xx/dev".
+Ignoring, exclude it (-e/-ef) to override.
+mkfs.fat: Warning: lowercase labels might not work properly on some systems
++ [ 5 -ne 5 ]
++ OUTPUT=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-factory.img.gz
++ BOOTFS=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-factory.img.gz.boot
++ ROOTFS=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.squashfs
++ BOOTFSSIZE=64
++ ROOTFSSIZE=104
++ align=4096
++ head=4
++ kernel_type=c
++ rootfs_type=83
++ sect=63
++ ptgen -o /builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-factory.img.gz -h 4 -s 63 -l 4096 -t c -p 64M -t 83 -p 104M
+part 0 65536
+part 0 106496
++ set 4194304 67108864 75497472 109051904
++ BOOTOFFSET=8192
++ ROOTFSOFFSET=147456
++ dd bs=512 if=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-factory.img.gz.boot of=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-factory.img.gz seek=8192 conv=notrunc
+131072+0 records in
+131072+0 records out
+67108864 bytes (67 MB, 64 MiB) copied, 0.164177 s, 409 MB/s
++ dd bs=512 if=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.squashfs of=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-factory.img.gz seek=147456 conv=notrunc
+7783+1 records in
+7783+1 records out
+3985024 bytes (4.0 MB, 3.8 MiB) copied, 0.00937945 s, 425 MB/s
+mkfs.fat: Warning: lowercase labels might not work properly on some systems
++ [ 5 -ne 5 ]
++ OUTPUT=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-factory.img.gz
++ BOOTFS=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-factory.img.gz.boot
++ ROOTFS=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.ext4
++ BOOTFSSIZE=64
++ ROOTFSSIZE=104
++ align=4096
++ head=4
++ kernel_type=c
++ rootfs_type=83
++ sect=63
++ ptgen -o /builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-factory.img.gz -h 4 -s 63 -l 4096 -t c -p 64M -t 83 -p 104M
+part 0 65536
+part 0 106496
++ set 4194304 67108864 75497472 109051904
++ BOOTOFFSET=8192
++ ROOTFSOFFSET=147456
++ dd bs=512 if=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-factory.img.gz.boot of=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-factory.img.gz seek=8192 conv=notrunc
+131072+0 records in
+131072+0 records out
+67108864 bytes (67 MB, 64 MiB) copied, 0.16492 s, 407 MB/s
++ dd bs=512 if=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.ext4 of=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-factory.img.gz seek=147456 conv=notrunc
+212992+0 records in
+212992+0 records out
+109051904 bytes (109 MB, 104 MiB) copied, 0.263733 s, 413 MB/s
+mkfs.fat: Warning: lowercase labels might not work properly on some systems
++ [ 5 -ne 5 ]
++ OUTPUT=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-sysupgrade.img.gz
++ BOOTFS=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-sysupgrade.img.gz.boot
++ ROOTFS=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.squashfs
++ BOOTFSSIZE=64
++ ROOTFSSIZE=104
++ align=4096
++ head=4
++ kernel_type=c
++ rootfs_type=83
++ sect=63
++ ptgen -o /builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-sysupgrade.img.gz -h 4 -s 63 -l 4096 -t c -p 64M -t 83 -p 104M
+part 0 65536
+part 0 106496
++ set 4194304 67108864 75497472 109051904
++ BOOTOFFSET=8192
++ ROOTFSOFFSET=147456
++ dd bs=512 if=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-sysupgrade.img.gz.boot of=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-sysupgrade.img.gz seek=8192 conv=notrunc
+131072+0 records in
+131072+0 records out
+67108864 bytes (67 MB, 64 MiB) copied, 0.167662 s, 400 MB/s
++ dd bs=512 if=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.squashfs of=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-squashfs-sysupgrade.img.gz seek=147456 conv=notrunc
+7783+1 records in
+7783+1 records out
+3985024 bytes (4.0 MB, 3.8 MiB) copied, 0.00907868 s, 439 MB/s
+mkfs.fat: Warning: lowercase labels might not work properly on some systems
++ [ 5 -ne 5 ]
++ OUTPUT=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-sysupgrade.img.gz
++ BOOTFS=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-sysupgrade.img.gz.boot
++ ROOTFS=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.ext4
++ BOOTFSSIZE=64
++ ROOTFSSIZE=104
++ align=4096
++ head=4
++ kernel_type=c
++ rootfs_type=83
++ sect=63
++ ptgen -o /builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-sysupgrade.img.gz -h 4 -s 63 -l 4096 -t c -p 64M -t 83 -p 104M
+part 0 65536
+part 0 106496
++ set 4194304 67108864 75497472 109051904
++ BOOTOFFSET=8192
++ ROOTFSOFFSET=147456
++ dd bs=512 if=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-sysupgrade.img.gz.boot of=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-sysupgrade.img.gz seek=8192 conv=notrunc
+131072+0 records in
+131072+0 records out
+67108864 bytes (67 MB, 64 MiB) copied, 0.167182 s, 401 MB/s
++ dd bs=512 if=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.ext4 of=/builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/tmp/openwrt-23.05.5-e9a3eaa1f35d-bcm27xx-bcm2711-rpi-4-ext4-sysupgrade.img.gz seek=147456 conv=notrunc
+212992+0 records in
+212992+0 records out
+109051904 bytes (109 MB, 104 MiB) copied, 0.234841 s, 464 MB/s
+STDOUT
+Checking 'true'... ok.
+Checking 'false'... ok.
+Checking 'working-make'... ok.
+Checking 'case-sensitive-fs'... ok.
+Checking 'proper-umask'... ok.
+Checking 'perl-data-dumper'... ok.
+Checking 'perl-findbin'... ok.
+Checking 'perl-file-copy'... ok.
+Checking 'perl-file-compare'... ok.
+Checking 'perl-thread-queue'... ok.
+Checking 'tar'... ok.
+Checking 'find'... ok.
+Checking 'bash'... ok.
+Checking 'xargs'... ok.
+Checking 'patch'... ok.
+Checking 'diff'... ok.
+Checking 'cp'... ok.
+Checking 'seq'... ok.
+Checking 'awk'... ok.
+Checking 'grep'... ok.
+Checking 'egrep'... ok.
+Checking 'getopt'... ok.
+Checking 'realpath'... ok.
+Checking 'stat'... ok.
+Checking 'gzip'... ok.
+Checking 'unzip'... ok.
+Checking 'bzip2'... ok.
+Checking 'wget'... ok.
+Checking 'install'... ok.
+Checking 'perl'... ok.
+Checking 'python'... ok.
+Checking 'python3'... ok.
+Checking 'python3-distutils'... ok.
+Checking 'python3-stdlib'... ok.
+Checking 'file'... ok.
+Checking 'which'... ok.
+Checking 'ldconfig-stub'... ok.
+Building images for bcm27xx - Raspberry Pi 4B/400/CM4 (64bit)
+Packages: base-files busybox ca-bundle dnsmasq dropbear firewall4 fstools kmod-gpio-button-hotplug kmod-leds-gpio kmod-mt7603 kmod-nft-offload kmod-usb-ohci kmod-usb2 libc libgcc libustream-mbedtls logd luci mtd netifd nftables odhcp6c odhcpd-ipv6only opkg ppp ppp-mod-pppoe procd procd-seccomp procd-ujail swconfig uci uclient-fetch urandom-seed urngd wpad-mbedtls kmod-nft-bridge mesh11sd base-files busybox ca-bundle dnsmasq dropbear firewall4 fstools kernel kmod-nft-offload libc libgcc libustream-mbedtls logd mtd netifd nftables odhcp6c odhcpd-ipv6only opkg ppp ppp-mod-pppoe procd procd-seccomp procd-ujail uci uclient-fetch urandom-seed
+
+
+Installing packages...
+Installing libc (1.2.4-4) to root...
+Installing libgcc1 (12.3.0-4) to root...
+Copying /builder/dl/libgcc1_12.3.0-4_aarch64_cortex-a72.ipk.
+Configuring libgcc1.
+Configuring libc.
+Installing kernel (5.15.167-1-ff3c8e5d13ba51d6e12024010af1a071) to root...
+Configuring kernel.
+Installing base-files (1562-r24106-10cc5fcd00) to root...
+Copying /builder/dl/base-files_1562-r24106-10cc5fcd00_aarch64_cortex-a72.ipk.
+Installing libubox20230523 (2023-05-23-75a3b870-1) to root...
+Copying /builder/dl/libubox20230523_2023-05-23-75a3b870-1_aarch64_cortex-a72.ipk.
+Installing libuci20130104 (2023-08-10-5781664d-1) to root...
+Copying /builder/dl/libuci20130104_2023-08-10-5781664d-1_aarch64_cortex-a72.ipk.
+Installing libnl-tiny1 (2023-07-27-bc92a280-1) to root...
+Copying /builder/dl/libnl-tiny1_2023-07-27-bc92a280-1_aarch64_cortex-a72.ipk.
+Installing libubus20230605 (2023-06-05-f787c97b-1) to root...
+Copying /builder/dl/libubus20230605_2023-06-05-f787c97b-1_aarch64_cortex-a72.ipk.
+Installing libjson-c5 (0.16-3) to root...
+Copying /builder/dl/libjson-c5_0.16-3_aarch64_cortex-a72.ipk.
+Installing libblobmsg-json20230523 (2023-05-23-75a3b870-1) to root...
+Copying /builder/dl/libblobmsg-json20230523_2023-05-23-75a3b870-1_aarch64_cortex-a72.ipk.
+Installing ubusd (2023-06-05-f787c97b-1) to root...
+Copying /builder/dl/ubusd_2023-06-05-f787c97b-1_aarch64_cortex-a72.ipk.
+Installing ubus (2023-06-05-f787c97b-1) to root...
+Copying /builder/dl/ubus_2023-06-05-f787c97b-1_aarch64_cortex-a72.ipk.
+Installing jshn (2023-05-23-75a3b870-1) to root...
+Copying /builder/dl/jshn_2023-05-23-75a3b870-1_aarch64_cortex-a72.ipk.
+Installing netifd (2024-01-04-c18cc79d-2) to root...
+Copying /builder/dl/netifd_2024-01-04-c18cc79d-2_aarch64_cortex-a72.ipk.
+Installing jsonfilter (2024-01-23-594cfa86-1) to root...
+Copying /builder/dl/jsonfilter_2024-01-23-594cfa86-1_aarch64_cortex-a72.ipk.
+Installing usign (2020-05-23-f1f65026-1) to root...
+Copying /builder/dl/usign_2020-05-23-f1f65026-1_aarch64_cortex-a72.ipk.
+Installing openwrt-keyring (2022-03-25-62471e69-2) to root...
+Copying /builder/dl/openwrt-keyring_2022-03-25-62471e69-2_aarch64_cortex-a72.ipk.
+Installing ubox (2022-08-13-4c7b720b-2) to root...
+Copying /builder/dl/ubox_2022-08-13-4c7b720b-2_aarch64_cortex-a72.ipk.
+Installing fstools (2023-02-28-bfe882d5-1) to root...
+Copying /builder/dl/fstools_2023-02-28-bfe882d5-1_aarch64_cortex-a72.ipk.
+Installing fwtool (2019-11-12-8f7fe925-1) to root...
+Copying /builder/dl/fwtool_2019-11-12-8f7fe925-1_aarch64_cortex-a72.ipk.
+Installing busybox (1.36.1-1) to root...
+Copying /builder/dl/busybox_1.36.1-1_aarch64_cortex-a72.ipk.
+Installing ca-bundle (20230311-1) to root...
+Copying /builder/dl/ca-bundle_20230311-1_all.ipk.
+Installing dnsmasq (2.90-2) to root...
+Copying /builder/dl/dnsmasq_2.90-2_aarch64_cortex-a72.ipk.
+Installing dropbear (2022.82-6) to root...
+Copying /builder/dl/dropbear_2022.82-6_aarch64_cortex-a72.ipk.
+Installing firewall4 (2023-09-01-598d9fbb-1) to root...
+Copying /builder/dl/firewall4_2023-09-01-598d9fbb-1_aarch64_cortex-a72.ipk.
+Installing libucode20230711 (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/libucode20230711_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Installing ucode (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/ucode_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Installing kmod-nfnetlink (5.15.167-1) to root...
+Copying /builder/dl/kmod-nfnetlink_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nf-reject (5.15.167-1) to root...
+Copying /builder/dl/kmod-nf-reject_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nf-reject6 (5.15.167-1) to root...
+Copying /builder/dl/kmod-nf-reject6_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nf-conntrack (5.15.167-1) to root...
+Copying /builder/dl/kmod-nf-conntrack_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nf-conntrack6 (5.15.167-1) to root...
+Copying /builder/dl/kmod-nf-conntrack6_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nf-nat (5.15.167-1) to root...
+Copying /builder/dl/kmod-nf-nat_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nf-log (5.15.167-1) to root...
+Copying /builder/dl/kmod-nf-log_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nf-log6 (5.15.167-1) to root...
+Copying /builder/dl/kmod-nf-log6_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-hash (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-hash_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-crc32c (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-crc32c_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-lib-crc32c (5.15.167-1) to root...
+Copying /builder/dl/kmod-lib-crc32c_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nft-core (5.15.167-1) to root...
+Copying /builder/dl/kmod-nft-core_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nft-fib (5.15.167-1) to root...
+Copying /builder/dl/kmod-nft-fib_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nf-flow (5.15.167-1) to root...
+Copying /builder/dl/kmod-nf-flow_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nft-nat (5.15.167-1) to root...
+Copying /builder/dl/kmod-nft-nat_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nft-offload (5.15.167-1) to root...
+Copying /builder/dl/kmod-nft-offload_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing libmnl0 (1.0.5-1) to root...
+Copying /builder/dl/libmnl0_1.0.5-1_aarch64_cortex-a72.ipk.
+Installing libnftnl11 (1.2.6-1) to root...
+Copying /builder/dl/libnftnl11_1.2.6-1_aarch64_cortex-a72.ipk.
+Installing jansson4 (2.14-3) to root...
+Copying /builder/dl/jansson4_2.14-3_aarch64_cortex-a72.ipk.
+Installing nftables-json (1.0.8-1) to root...
+Copying /builder/dl/nftables-json_1.0.8-1_aarch64_cortex-a72.ipk.
+Installing ucode-mod-fs (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/ucode-mod-fs_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Installing ucode-mod-ubus (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/ucode-mod-ubus_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Installing ucode-mod-uci (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/ucode-mod-uci_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Package fstools (2023-02-28-bfe882d5-1) installed in root is up to date.
+Installing kmod-gpio-button-hotplug (5.15.167-3) to root...
+Copying /builder/dl/kmod-gpio-button-hotplug_5.15.167-3_aarch64_cortex-a72.ipk.
+Installing kmod-leds-gpio (5.15.167-1) to root...
+Copying /builder/dl/kmod-leds-gpio_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-mt7603 (5.15.167+2024-04-03-1e336a85-1) to root...
+Copying /builder/dl/kmod-mt7603_5.15.167+2024-04-03-1e336a85-1_aarch64_cortex-a72.ipk.
+Installing iw (5.19-1) to root...
+Copying /builder/dl/iw_5.19-1_aarch64_cortex-a72.ipk.
+Installing libiwinfo-data (2023-07-01-ca79f641-1) to root...
+Copying /builder/dl/libiwinfo-data_2023-07-01-ca79f641-1_aarch64_cortex-a72.ipk.
+Installing libiwinfo20230701 (2023-07-01-ca79f641-1) to root...
+Copying /builder/dl/libiwinfo20230701_2023-07-01-ca79f641-1_aarch64_cortex-a72.ipk.
+Installing iwinfo (2023-07-01-ca79f641-1) to root...
+Copying /builder/dl/iwinfo_2023-07-01-ca79f641-1_aarch64_cortex-a72.ipk.
+Installing wireless-regdb (2024.07.04-1) to root...
+Copying /builder/dl/wireless-regdb_2024.07.04-1_all.ipk.
+Installing kmod-cfg80211 (5.15.167+6.1.110-1-1) to root...
+Copying /builder/dl/kmod-cfg80211_5.15.167+6.1.110-1-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-cmac (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-cmac_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-null (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-null_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-aead (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-aead_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-manager (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-manager_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-hmac (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-hmac_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-sha512 (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-sha512_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-rng (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-rng_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-seqiv (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-seqiv_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-ctr (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-ctr_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-ccm (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-ccm_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-gf128 (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-gf128_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-ghash (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-ghash_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-crypto-gcm (5.15.167-1) to root...
+Copying /builder/dl/kmod-crypto-gcm_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing hostapd-common (2023-09-08-e5ccbfc6-8) to root...
+Copying /builder/dl/hostapd-common_2023-09-08-e5ccbfc6-8_aarch64_cortex-a72.ipk.
+Installing kmod-mac80211 (5.15.167+6.1.110-1-1) to root...
+Copying /builder/dl/kmod-mac80211_5.15.167+6.1.110-1-1_aarch64_cortex-a72.ipk.
+Installing kmod-mt76-core (5.15.167+2024-04-03-1e336a85-1) to root...
+Copying /builder/dl/kmod-mt76-core_5.15.167+2024-04-03-1e336a85-1_aarch64_cortex-a72.ipk.
+Package kmod-nft-offload (5.15.167-1) installed in root is up to date.
+Installing kmod-usb-ohci (5.15.167-1) to root...
+Copying /builder/dl/kmod-usb-ohci_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-nls-base (5.15.167-1) to root...
+Copying /builder/dl/kmod-nls-base_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-usb-core (5.15.167-1) to root...
+Copying /builder/dl/kmod-usb-core_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-usb2 (5.15.167-1) to root...
+Copying /builder/dl/kmod-usb2_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-usb-ehci (5.15.167-1) to root...
+Copying /builder/dl/kmod-usb-ehci_5.15.167-1_aarch64_cortex-a72.ipk.
+Package libc (1.2.4-4) installed in root is up to date.
+Package libgcc1 (12.3.0-4) installed in root is up to date.
+Installing libustream-mbedtls20201210 (2023-02-25-498f6e26-1) to root...
+Copying /builder/dl/libustream-mbedtls20201210_2023-02-25-498f6e26-1_aarch64_cortex-a72.ipk.
+Installing libmbedtls12 (2.28.9-1) to root...
+Copying /builder/dl/libmbedtls12_2.28.9-1_aarch64_cortex-a72.ipk.
+Installing logd (2022-08-13-4c7b720b-2) to root...
+Copying /builder/dl/logd_2022-08-13-4c7b720b-2_aarch64_cortex-a72.ipk.
+Installing luci (git-23.051.66410-a505bb1) to root...
+Copying /builder/dl/luci_git-23.051.66410-a505bb1_all.ipk.
+Installing luci-proto-ipv6 (git-24.086.45108-51aee90) to root...
+Copying /builder/dl/luci-proto-ipv6_git-24.086.45108-51aee90_all.ipk.
+Installing luci-app-firewall (git-24.067.01746-69867db) to root...
+Copying /builder/dl/luci-app-firewall_git-24.067.01746-69867db_all.ipk.
+Installing rpcd (2023-07-01-c07ab2f9-1) to root...
+Copying /builder/dl/rpcd_2023-07-01-c07ab2f9-1_aarch64_cortex-a72.ipk.
+Installing rpcd-mod-file (2023-07-01-c07ab2f9-1) to root...
+Copying /builder/dl/rpcd-mod-file_2023-07-01-c07ab2f9-1_aarch64_cortex-a72.ipk.
+Installing rpcd-mod-luci (20240305-1) to root...
+Copying /builder/dl/rpcd-mod-luci_20240305-1_aarch64_cortex-a72.ipk.
+Installing rpcd-mod-ucode (2023-07-01-c07ab2f9-1) to root...
+Copying /builder/dl/rpcd-mod-ucode_2023-07-01-c07ab2f9-1_aarch64_cortex-a72.ipk.
+Installing cgi-io (2022-08-10-901b0f04-21) to root...
+Copying /builder/dl/cgi-io_2022-08-10-901b0f04-21_aarch64_cortex-a72.ipk.
+Installing ucode-mod-math (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/ucode-mod-math_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Installing ucode-mod-html (1) to root...
+Copying /builder/dl/ucode-mod-html_1_aarch64_cortex-a72.ipk.
+Installing liblucihttp0 (2023-03-15-9b5b683f-1) to root...
+Copying /builder/dl/liblucihttp0_2023-03-15-9b5b683f-1_aarch64_cortex-a72.ipk.
+Installing liblucihttp-ucode (2023-03-15-9b5b683f-1) to root...
+Copying /builder/dl/liblucihttp-ucode_2023-03-15-9b5b683f-1_aarch64_cortex-a72.ipk.
+Installing luci-base (git-24.264.56413-c7a3562) to root...
+Copying /builder/dl/luci-base_git-24.264.56413-c7a3562_aarch64_cortex-a72.ipk.
+Installing rpcd-mod-iwinfo (2023-07-01-c07ab2f9-1) to root...
+Copying /builder/dl/rpcd-mod-iwinfo_2023-07-01-c07ab2f9-1_aarch64_cortex-a72.ipk.
+Installing luci-mod-status (git-24.212.61237-b6da3f2) to root...
+Copying /builder/dl/luci-mod-status_git-24.212.61237-b6da3f2_aarch64_cortex-a72.ipk.
+Installing luci-mod-system (git-24.067.01860-7a82b2f) to root...
+Copying /builder/dl/luci-mod-system_git-24.067.01860-7a82b2f_all.ipk.
+Installing luci-mod-network (git-24.281.58052-a6c2279) to root...
+Copying /builder/dl/luci-mod-network_git-24.281.58052-a6c2279_all.ipk.
+Installing luci-mod-admin-full (git-19.253.48496-3f93650) to root...
+Copying /builder/dl/luci-mod-admin-full_git-19.253.48496-3f93650_all.ipk.
+Installing luci-proto-ppp (git-24.135.44542-f1ec9c2) to root...
+Copying /builder/dl/luci-proto-ppp_git-24.135.44542-f1ec9c2_all.ipk.
+Installing luci-theme-bootstrap (git-24.086.46634-1ffe078) to root...
+Copying /builder/dl/luci-theme-bootstrap_git-24.086.46634-1ffe078_all.ipk.
+Installing rpcd-mod-rrdns (20170710) to root...
+Copying /builder/dl/rpcd-mod-rrdns_20170710_aarch64_cortex-a72.ipk.
+Installing libjson-script20230523 (2023-05-23-75a3b870-1) to root...
+Copying /builder/dl/libjson-script20230523_2023-05-23-75a3b870-1_aarch64_cortex-a72.ipk.
+Installing uhttpd (2023-06-25-34a8a74d-2) to root...
+Copying /builder/dl/uhttpd_2023-06-25-34a8a74d-2_aarch64_cortex-a72.ipk.
+Installing uhttpd-mod-ubus (2023-06-25-34a8a74d-2) to root...
+Copying /builder/dl/uhttpd-mod-ubus_2023-06-25-34a8a74d-2_aarch64_cortex-a72.ipk.
+Installing luci-light (git-23.024.33244-34dee82) to root...
+Copying /builder/dl/luci-light_git-23.024.33244-34dee82_all.ipk.
+Installing libuclient20201210 (2023-04-13-007d9454-1) to root...
+Copying /builder/dl/libuclient20201210_2023-04-13-007d9454-1_aarch64_cortex-a72.ipk.
+Installing uclient-fetch (2023-04-13-007d9454-1) to root...
+Copying /builder/dl/uclient-fetch_2023-04-13-007d9454-1_aarch64_cortex-a72.ipk.
+Installing libpthread (1.2.4-4) to root...
+Copying /builder/dl/libpthread_1.2.4-4_aarch64_cortex-a72.ipk.
+Installing opkg (2022-02-24-d038e5b6-2) to root...
+Copying /builder/dl/opkg_2022-02-24-d038e5b6-2_aarch64_cortex-a72.ipk.
+Installing luci-app-opkg (git-24.148.43905-2891ca4) to root...
+Copying /builder/dl/luci-app-opkg_git-24.148.43905-2891ca4_all.ipk.
+Installing mtd (26) to root...
+Copying /builder/dl/mtd_26_aarch64_cortex-a72.ipk.
+Package netifd (2024-01-04-c18cc79d-2) installed in root is up to date.
+Package nftables-json (1.0.8-1) installed in root is up to date.
+Installing odhcp6c (2023-05-12-bcd28363-20) to root...
+Copying /builder/dl/odhcp6c_2023-05-12-bcd28363-20_aarch64_cortex-a72.ipk.
+Installing odhcpd-ipv6only (2023-10-24-d8118f6e-1) to root...
+Copying /builder/dl/odhcpd-ipv6only_2023-10-24-d8118f6e-1_aarch64_cortex-a72.ipk.
+Package opkg (2022-02-24-d038e5b6-2) installed in root is up to date.
+Installing ppp (2.4.9.git-2021-01-04-4) to root...
+Copying /builder/dl/ppp_2.4.9.git-2021-01-04-4_aarch64_cortex-a72.ipk.
+Installing kmod-lib-crc-ccitt (5.15.167-1) to root...
+Copying /builder/dl/kmod-lib-crc-ccitt_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-slhc (5.15.167-1) to root...
+Copying /builder/dl/kmod-slhc_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-ppp (5.15.167-1) to root...
+Copying /builder/dl/kmod-ppp_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing ppp-mod-pppoe (2.4.9.git-2021-01-04-4) to root...
+Copying /builder/dl/ppp-mod-pppoe_2.4.9.git-2021-01-04-4_aarch64_cortex-a72.ipk.
+Installing kmod-pppox (5.15.167-1) to root...
+Copying /builder/dl/kmod-pppox_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing kmod-pppoe (5.15.167-1) to root...
+Copying /builder/dl/kmod-pppoe_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing procd (2023-06-25-2db83655-2) to root...
+Copying /builder/dl/procd_2023-06-25-2db83655-2_aarch64_cortex-a72.ipk.
+Installing procd-seccomp (2023-06-25-2db83655-2) to root...
+Copying /builder/dl/procd-seccomp_2023-06-25-2db83655-2_aarch64_cortex-a72.ipk.
+Installing procd-ujail (2023-06-25-2db83655-2) to root...
+Copying /builder/dl/procd-ujail_2023-06-25-2db83655-2_aarch64_cortex-a72.ipk.
+Installing swconfig (12) to root...
+Copying /builder/dl/swconfig_12_aarch64_cortex-a72.ipk.
+Installing uci (2023-08-10-5781664d-1) to root...
+Copying /builder/dl/uci_2023-08-10-5781664d-1_aarch64_cortex-a72.ipk.
+Package uclient-fetch (2023-04-13-007d9454-1) installed in root is up to date.
+Installing urandom-seed (3) to root...
+Copying /builder/dl/urandom-seed_3_aarch64_cortex-a72.ipk.
+Installing getrandom (2022-08-13-4c7b720b-2) to root...
+Copying /builder/dl/getrandom_2022-08-13-4c7b720b-2_aarch64_cortex-a72.ipk.
+Installing urngd (2023-11-01-44365eb1-1) to root...
+Copying /builder/dl/urngd_2023-11-01-44365eb1-1_aarch64_cortex-a72.ipk.
+Installing wpad-mbedtls (2023-09-08-e5ccbfc6-8) to root...
+Copying /builder/dl/wpad-mbedtls_2023-09-08-e5ccbfc6-8_aarch64_cortex-a72.ipk.
+Installing ucode-mod-nl80211 (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/ucode-mod-nl80211_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Installing ucode-mod-rtnl (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/ucode-mod-rtnl_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Installing ucode-mod-uloop (2024-07-11-1a8a0bcf-3) to root...
+Copying /builder/dl/ucode-mod-uloop_2024-07-11-1a8a0bcf-3_aarch64_cortex-a72.ipk.
+Installing kmod-nft-bridge (5.15.167-1) to root...
+Copying /builder/dl/kmod-nft-bridge_5.15.167-1_aarch64_cortex-a72.ipk.
+Installing mesh11sd (4.1.1-1) to root...
+Copying /builder/dl/mesh11sd_4.1.1-1_all.ipk.
+Package base-files (1562-r24106-10cc5fcd00) installed in root is up to date.
+Package busybox (1.36.1-1) installed in root is up to date.
+Package ca-bundle (20230311-1) installed in root is up to date.
+Package dnsmasq (2.90-2) installed in root is up to date.
+Package dropbear (2022.82-6) installed in root is up to date.
+Package firewall4 (2023-09-01-598d9fbb-1) installed in root is up to date.
+Package fstools (2023-02-28-bfe882d5-1) installed in root is up to date.
+Package kernel (5.15.167-1-ff3c8e5d13ba51d6e12024010af1a071) installed in root is up to date.
+Package kmod-nft-offload (5.15.167-1) installed in root is up to date.
+Package libc (1.2.4-4) installed in root is up to date.
+Package libgcc1 (12.3.0-4) installed in root is up to date.
+Package libustream-mbedtls20201210 (2023-02-25-498f6e26-1) installed in root is up to date.
+Package logd (2022-08-13-4c7b720b-2) installed in root is up to date.
+Package mtd (26) installed in root is up to date.
+Package netifd (2024-01-04-c18cc79d-2) installed in root is up to date.
+Package nftables-json (1.0.8-1) installed in root is up to date.
+Package odhcp6c (2023-05-12-bcd28363-20) installed in root is up to date.
+Package odhcpd-ipv6only (2023-10-24-d8118f6e-1) installed in root is up to date.
+Package opkg (2022-02-24-d038e5b6-2) installed in root is up to date.
+Package ppp (2.4.9.git-2021-01-04-4) installed in root is up to date.
+Package ppp-mod-pppoe (2.4.9.git-2021-01-04-4) installed in root is up to date.
+Package procd (2023-06-25-2db83655-2) installed in root is up to date.
+Package procd-seccomp (2023-06-25-2db83655-2) installed in root is up to date.
+Package procd-ujail (2023-06-25-2db83655-2) installed in root is up to date.
+Package uci (2023-08-10-5781664d-1) installed in root is up to date.
+Package uclient-fetch (2023-04-13-007d9454-1) installed in root is up to date.
+Package urandom-seed (3) installed in root is up to date.
+Configuring libnl-tiny1.
+Configuring libubox20230523.
+Configuring libuci20130104.
+Configuring libubus20230605.
+Configuring libiwinfo-data.
+Configuring libiwinfo20230701.
+Configuring iwinfo.
+Configuring liblucihttp0.
+Configuring cgi-io.
+Configuring kmod-crypto-gf128.
+Configuring libuclient20201210.
+Configuring uclient-fetch.
+Configuring libpthread.
+Configuring opkg.
+Configuring kmod-nls-base.
+Configuring kmod-usb-core.
+Configuring luci-app-opkg.
+Configuring libjson-c5.
+Configuring libblobmsg-json20230523.
+Configuring ubusd.
+Configuring ubus.
+Configuring iw.
+Configuring kmod-crypto-hash.
+Configuring kmod-crypto-null.
+Configuring kmod-crypto-aead.
+Configuring kmod-crypto-manager.
+Configuring rpcd.
+Configuring busybox.
+Configuring kmod-crypto-hmac.
+Configuring kmod-crypto-sha512.
+Configuring kmod-crypto-rng.
+Configuring kmod-crypto-seqiv.
+Configuring kmod-crypto-ctr.
+Configuring kmod-nfnetlink.
+Configuring kmod-nf-reject.
+Configuring kmod-nf-reject6.
+Configuring kmod-nf-conntrack.
+Configuring kmod-nf-conntrack6.
+Configuring kmod-nf-nat.
+Configuring kmod-nf-log.
+Configuring kmod-nf-log6.
+Configuring kmod-crypto-crc32c.
+Configuring kmod-lib-crc32c.
+Configuring kmod-nft-core.
+Configuring kmod-nft-fib.
+Configuring swconfig.
+Configuring rpcd-mod-file.
+Configuring rpcd-mod-luci.
+Configuring libucode20230711.
+Configuring rpcd-mod-ucode.
+Configuring ucode.
+Configuring ucode-mod-fs.
+Configuring ucode-mod-uci.
+Configuring ucode-mod-ubus.
+Configuring ucode-mod-math.
+Configuring ucode-mod-html.
+Configuring liblucihttp-ucode.
+Configuring luci-base.
+Configuring luci-mod-system.
+Configuring kmod-nf-flow.
+Configuring kmod-lib-crc-ccitt.
+Configuring ucode-mod-uloop.
+Configuring getrandom.
+Configuring luci-theme-bootstrap.
+Configuring kmod-slhc.
+Configuring kmod-ppp.
+Configuring kmod-pppox.
+Configuring kmod-pppoe.
+Configuring procd-ujail.
+Configuring jshn.
+Configuring netifd.
+Configuring jsonfilter.
+Configuring usign.
+Configuring openwrt-keyring.
+Configuring ubox.
+Configuring fstools.
+Configuring fwtool.
+Configuring base-files.
+Configuring mesh11sd.
+Configuring libmbedtls12.
+Configuring libustream-mbedtls20201210.
+Configuring kmod-nft-nat.
+Configuring kmod-nft-offload.
+Configuring libmnl0.
+Configuring libnftnl11.
+Configuring jansson4.
+Configuring nftables-json.
+Configuring firewall4.
+Configuring kmod-usb-ohci.
+Configuring dnsmasq.
+Configuring libjson-script20230523.
+Configuring procd.
+Configuring kmod-nft-bridge.
+Configuring kmod-usb-ehci.
+Configuring rpcd-mod-iwinfo.
+Configuring luci-mod-status.
+Configuring kmod-usb2.
+Configuring luci-app-firewall.
+Configuring odhcp6c.
+Configuring kmod-crypto-ghash.
+Configuring uci.
+Configuring dropbear.
+Configuring mtd.
+Configuring odhcpd-ipv6only.
+Configuring procd-seccomp.
+Configuring ucode-mod-nl80211.
+Configuring kmod-crypto-ccm.
+Configuring urandom-seed.
+Configuring luci-proto-ppp.
+Configuring ppp.
+Configuring luci-mod-network.
+Configuring luci-mod-admin-full.
+Configuring kmod-leds-gpio.
+Configuring kmod-gpio-button-hotplug.
+Configuring logd.
+Configuring wireless-regdb.
+Configuring kmod-cfg80211.
+Configuring kmod-crypto-cmac.
+Configuring kmod-crypto-gcm.
+Configuring hostapd-common.
+Configuring kmod-mac80211.
+Configuring kmod-mt76-core.
+Configuring kmod-mt7603.
+Configuring luci-proto-ipv6.
+Configuring ucode-mod-rtnl.
+Configuring wpad-mbedtls.
+Configuring uhttpd.
+Configuring ca-bundle.
+Configuring rpcd-mod-rrdns.
+Configuring uhttpd-mod-ubus.
+Configuring luci-light.
+Configuring luci.
+Configuring urngd.
+Configuring ppp-mod-pppoe.
+
+Finalizing root filesystem...
+Enabling boot
+Enabling cron
+Enabling dnsmasq
+Enabling done
+Enabling dropbear
+Enabling firewall
+Enabling gpio_switch
+Enabling led
+Enabling log
+Enabling mesh11sd
+Enabling network
+Enabling odhcpd
+Enabling packet_steering
+Enabling radius
+Enabling rpcd
+Enabling sysctl
+Enabling sysfixtime
+Enabling sysntpd
+Enabling system
+Enabling ucitrack
+Enabling uhttpd
+Enabling umount
+Enabling urandom_seed
+Enabling urngd
+Enabling wpad
+
+Building images...
+Parallel mksquashfs: Using 16 processors
+Creating 4.0 filesystem on /builder/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/root.squashfs, block size 262144.
+
+[|                                                             ]    0/1006   0%
+[=============================================================-] 1006/1006 100%
+
+Exportable Squashfs 4.0 filesystem, xz compressed, data block size 262144
+	compressed data, compressed metadata, compressed fragments,
+	no xattrs, compressed ids
+	duplicates are removed
+Filesystem size 3891.62 Kbytes (3.80 Mbytes)
+	24.83% of uncompressed filesystem size (15676.17 Kbytes)
+Inode table size 8932 bytes (8.72 Kbytes)
+	20.41% of uncompressed inode table size (43753 bytes)
+Directory table size 12676 bytes (12.38 Kbytes)
+	44.63% of uncompressed directory table size (28402 bytes)
+Number of duplicate files found 151
+Number of inodes 1322
+Number of files 997
+Number of fragments 45
+Number of symbolic links 212
+Number of device nodes 1
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 112
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	unknown (0)
+Number of gids 1
+	unknown (0)
+Creating filesystem with parameters:
+    Size: 109051904
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 6656
+    Inode size: 256
+    Journal blocks: 1024
+    Label: rootfs
+    Blocks: 26624
+    Block groups: 1
+    Reserved blocks: 0
+    Reserved block group size: 7
+Created filesystem with 1331/6656 inodes and 6279/26624 blocks
+mkfs.fat 4.2 (2021-01-31)
+mkfs.fat 4.2 (2021-01-31)
+mkfs.fat 4.2 (2021-01-31)
+mkfs.fat 4.2 (2021-01-31)
+
+Calculating checksums...
