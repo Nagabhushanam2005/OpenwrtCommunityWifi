@@ -14,32 +14,19 @@ In the upper text box, labelled “Installed Packages”, you will see a list of
 
 Add the following text, the upper text box will now look like this:
 ```
-base-files busybox ca-bundle dnsmasq dropbear firewall4 fstools kmod-gpio-button-hotplug
-kmod-leds-gpio kmod-mt7603 kmod-nft-offload kmod-usb-ohci kmod-usb2 libc libgcc
-libustream-mbedtls logd luci mtd netifd nftables odhcp6c odhcpd-ipv6only opkg
-ppp ppp-mod-pppoe procd procd-seccomp procd-ujail swconfig uci uclient-fetch urandom-seed
-urngd -wpad-basic-mbedtls wpad-mbedtls kmod-nft-bridge mesh11sd
+base-files bcm27xx-gpu-fw busybox ca-bundle dnsmasq dropbear e2fsprogs firewall4 fstools kmod-fs-vfat kmod-nft-offload kmod-nls-cp437 kmod-nls-iso8859-1 kmod-sound-arm-bcm2835 kmod-sound-core kmod-usb-hid libc libgcc libustream-mbedtls logd mkf2fs mtd netifd nftables odhcp6c odhcpd-ipv6only opkg partx-utils ppp ppp-mod-pppoe procd procd-seccomp procd-ujail uci uclient-fetch urandom-seed cypress-firmware-43455-sdio brcmfmac-nvram-43455-sdio kmod-brcmfmac wpad-basic-mbedtls kmod-usb-net-lan78xx kmod-r8169 iwinfo luci
+nano ip-full veth 
 ```
 Now, in the lower text box, add the following:
 
 ```
-uci set mesh11sd.setup.auto_config='1'
-uci set mesh11sd.setup.auto_mesh_id='Mesh1'
-uci set mesh11sd.setup.mesh_gate_encryption='3'
-uci set mesh11sd.setup.mesh_gate_key='code1'
-uci commit mesh11sd
-uci set network.lan.ipaddr='192.168.9.1'
-uci commit network
 rootpassword="myrootpassword"
 /bin/passwd root << EOF
 $rootpassword
 $rootpassword
 EOF
 ```
-- Replace MyMeshID with a secret mesh id string of your choice.
-- Replace mywificode with a wifi access code you will use for connecting user devices to the mesh gates (access points).
 - Replace myrootpassword with a secret root password of your choice.
-
 
 
 Finally, click “REQUEST BUILD” to build your customised firmware. 
