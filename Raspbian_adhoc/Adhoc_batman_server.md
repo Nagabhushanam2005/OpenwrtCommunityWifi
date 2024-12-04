@@ -1,10 +1,9 @@
 # Ad-Hoc Network Server Configuration Guide
 
-## Understanding Ad-Hoc Networking
+## Overview
+This guide focuses on configuring a Batman-ADV network node as a server, detailing the specific modifications required for server-side setup.
 
-An ad-hoc network represents a flexible, dynamically created network configuration that allows devices to communicate directly without relying on a predetermined infrastructure. Unlike traditional network setups, ad-hoc networks can be quickly established, making them ideal for scenarios requiring rapid, decentralized communication.
-
-## Network Configuration Strategy
+## Network Configuration
 
 ### Network Topology
 - **Ad-Hoc Network Address Range**: 192.168.199.x
@@ -22,11 +21,6 @@ The Dynamic Host Configuration Protocol (DHCP) server automates network configur
 sudo apt-get install -y dnsmasq
 ```
 
-#### Installation Significance
-- Deploys the `dnsmasq` network configuration service
-- Prepares automated IP address assignment mechanisms
-- Establishes foundation for dynamic network management
-
 ### 2. DHCP Server Configuration
 
 Configure the network's DHCP settings to define how devices will receive network information:
@@ -35,23 +29,16 @@ Configure the network's DHCP settings to define how devices will receive network
 sudo nano /etc/dnsmasq.conf
 ```
 
-Add these critical configuration lines:
+Add these lines:
 
 ```
 interface=bat0
 dhcp-range=192.168.199.2,192.168.199.99,255.255.255.0,12h
 ```
 
-#### Configuration Breakdown
-- `interface=bat0`: Specifies the primary network interface
-- `dhcp-range` parameters:
-  - Allocate IP addresses from 192.168.199.2 to 192.168.199.99
-  - Apply standard 255.255.255.0 subnet mask
-  - Issue 12-hour IP address leases
+### 3. Server configuration script
 
-### 3. Advanced Routing Configuration
-
-Modify the routing script `~/batman.sh` to the following:
+1. create a file `~/batman-adv-server.sh` and add the following lines:
 
 ```bash
 #!/bin/bash
@@ -78,27 +65,32 @@ sudo ifconfig bat0 192.168.199.1/24
 
 ```
 
-#### Routing Logic Explained
-- `batctl if add wlan0`: Integrates wireless interface into routing
-- `batctl gw_mode server`: Establishes advanced gateway functionality
-- `net.ipv4.ip_forward=1`: Enables bidirectional network routing
 - `iptables` rules:
   - Implement Network Address Translation
   - Track and permit established connections
   - Enable controlled inter-network communication
 
-### 4. Final Configuration Step
+2. Apply execution permissions to the script:
 
+```bash
+chmod +x ~/batman-adv-server.sh
+```
+
+3. To make the script run on boot, add the following line to the /etc/rc.local file:
+
+```bash
+batman-adv-server.sh
+```
+
+4. Run this command to start the dnsmasq server in the background and assign IP addresses in the range 192.168.1.2 to 192.168.1.100.
 
 ```bash
 dnsmasq --no-daemon --interface=bat0 --dhcp-range=192.168.199.2,192.168.199.100,12h &
+```
+
+5. reboot the system
+```bash
 reboot
 ```
-This will start the dnsmasq server in the background and assign IP addresses in the range 192.168.1.2 to 192.168.1.100.
-## Diagnostic and Troubleshooting Techniques
-
-- Examine DHCP service logs: `sudo journalctl -u dnsmasq`
-- Verify network interface status: `batctl if`
-- Review network routing rules: `sudo iptables -L -n -v`
 
 
