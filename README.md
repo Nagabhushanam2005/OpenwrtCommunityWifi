@@ -19,6 +19,6 @@ To build the firmware, follow the documentation in the [Firmware and flashing in
 
 OpenWrt is a Linux distribution for embedded devices. It is used to create a ad-hoc network with the BATMAN-ADV routing protocol. The Raspberry Pi 4b devices are configured as server and client. Follow the documentation in the [Ad-Hoc Network Configuration using OpenWrt with BATMAN-ADV](AdHoc/OpenWRT.md) section.
 
-### Access Point Configuration with BATMAN-ADV
+## Access Point Configuration with BATMAN-ADV
 
 Raspberry Pi 4b is configured as an Access Point (AP) to provide wireless connectivity, and BATMAN-ADV is enabled to support mesh networking capabilities. For detailed steps including setting up the AP and enabling BATMAN-ADV on the device follow the documentation in the [Access Point Setup with BATMAN-ADV](AccessPoint/AccessPoint.md) section.
