@@ -15,3 +15,6 @@ This project is a simple OpenWRT configuration to create a community wifi networ
 
 To build the firmware, follow the documentation in the [Firmware and flashing into Raspberry Pi 4b](firmware/firmware.md) section.
 
+## Network Configuration using OpenWrt with BATMAN-ADV
+
+OpenWrt is a Linux distribution for embedded devices. It is used to create a ad-hoc network with the BATMAN-ADV routing protocol. The Raspberry Pi 4b devices are configured as server and client. Follow the documentation in the [Ad-Hoc Network Configuration using OpenWrt with BATMAN-ADV](AdHoc/OpenWRT.md) section.
