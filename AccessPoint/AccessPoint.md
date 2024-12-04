@@ -1,4 +1,3 @@
-# BATMAN-ADV Ad-Hoc Network
 
 ## Introduction
 This guide provides a step-by-step process for setting up a BATMAN-ADV network using OpenWRT, where one Raspberry Pi is configured as an Access Point (AP) and the other as a client.
